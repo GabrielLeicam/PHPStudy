@@ -5,14 +5,12 @@ namespace Alura\Banco\Modelo\Funcionario;
 use Alura\Banco\Modelo\Pessoa;
 use Alura\Banco\Modelo\Cpf;
 
-// Funcionario é uma pessoa
 abstract class Funcionario extends Pessoa
 {
     private float $salario;
 
     public function __construct(string $nome, Cpf $cpf, float $salario)
     {
-        // Importante sempre chamar o construtor da classe base
         parent::__construct($nome, $cpf);
         $this->salario = $salario;
     }

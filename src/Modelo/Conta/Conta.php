@@ -2,7 +2,6 @@
 
 namespace Alura\Banco\Modelo\Conta;
 
-// Abstrata pois não está completa, precisa estender
 abstract class Conta
 {
     private $titular;
@@ -65,6 +64,5 @@ abstract class Conta
         return self::$numeroDeContas;
     }
 
-    // Método abstrato, exige que o filho defina um valor
     abstract protected function percentualTarifa(): float;
 }

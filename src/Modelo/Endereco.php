@@ -9,7 +9,7 @@ final class Endereco
     private string $cidade;
     private string $bairro;
     private string $rua;
-    private string $numero; //quando não for fazer cálculos com números, recomendado usar string
+    private string $numero;
 
     public function __construct(string $cidade, string $bairro, string $rua, string $numero)
     {
